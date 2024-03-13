@@ -24,7 +24,12 @@ export default function BubbleList() {
               <img src={product.image} alt="" />
             </div>
             <div className="product-info-container">
-              <p>{product.name}</p>
+              <p className="product-name">
+                {product.name}
+              </p>
+              <p className="product-description">
+                {product.description}
+              </p>
             </div>
           </li>
         ))}

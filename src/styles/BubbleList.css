@@ -17,12 +17,13 @@ p {
 }
 
 #bubble-list li {
-    background-color: rgb(0, 118, 222);
+    /* background-color: rgb(0, 222, 107); */
     border-style: solid;
     border-width: 1px;
 }
 
 #bubble-list li .product-img-container {
+    background-color: rgb(0, 127, 239);
     display: flex;
     justify-content: center;
 }
@@ -34,3 +35,12 @@ p {
 #bubble-list li .product-info-container {
     background-color: white;
 }
+
+#bubble-list li .product-info-container .product-name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bubble-list li .product-info-container .product-description {}
