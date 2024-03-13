@@ -34,13 +34,27 @@ p {
 
 #bubble-list li .product-info-container {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 15px;
 }
 
 #bubble-list li .product-info-container .product-name {
     font-size: 25px;
     font-weight: bold;
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #bubble-list li .product-info-container .product-description {}
+
+#bubble-list li .product-info-container hr {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+#bubble-list li .product-info-container .product-price {
+    text-align: center;
+    margin-top: auto;
+}
