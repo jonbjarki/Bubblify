@@ -26,6 +26,12 @@ p {
     flex-direction: column;
     height: 500px;
 
+    transition: .25s;
+    cursor: pointer;
+}
+
+#bubble-list li:hover {
+    transform: translateY(-6px);
 }
 
 #bubble-list li .product-img-container {
@@ -63,8 +69,8 @@ p {
 }
 
 #bubble-list li .product-info-container .price-container hr {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 25px;
 }
 
