@@ -20,7 +20,12 @@ export default function BubbleList() {
       <ul id="bubble-list">
         {bubbles.map((product) => (
           <li key={String(product.id)}>
-            <p>{product.name}</p>
+            <div className="product-img-container">
+              <img src={product.image} alt="" />
+            </div>
+            <div className="product-info-container">
+              <p>{product.name}</p>
+            </div>
           </li>
         ))}
       </ul>
