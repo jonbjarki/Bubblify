@@ -30,8 +30,10 @@ export default function BubbleList() {
               <p className="product-description">
                 {product.description}
               </p>
+              <div className="price-container">
               <hr />
-              <p className="product-price">Price: ${product.price}</p>
+              <p>Price: ${product.price}</p>
+              </div>
             </div>
           </li>
         ))}
