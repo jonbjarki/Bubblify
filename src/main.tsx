@@ -5,7 +5,6 @@ import NavigationBar from "./components/NavigationBar";
 
 import { useEffect, useState } from "react";
 import { BubbleType, BundleType } from "./types/bubble-types";
-import { BrowserRouter, Route} from "react-router-dom";
 
 
 export default function Main() {
@@ -25,10 +24,8 @@ export default function Main() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavigationBar />
-        <BubbleList />
-      </BrowserRouter>
+      <NavigationBar />
+      <BubbleList />
     </div>
   );
 }
