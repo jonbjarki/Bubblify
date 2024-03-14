@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/NavigationBar.css";
 
-const FilterBar = () => {
+const NavigationBar = () => {
   const categories = ["Bubbles", "Bundles", "About"];
 
   const handleClick = (index: number) => {
@@ -25,4 +25,4 @@ const FilterBar = () => {
   );
 };
 
-export default FilterBar;
+export default NavigationBar;

@@ -5,3 +5,10 @@ export interface BubbleType {
   image: string;
   price: number;
 }
+
+export interface BundleType {
+  id: number;
+  items: number[];
+  name: string;
+}
+

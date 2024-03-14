@@ -14,12 +14,16 @@ export default function BubbleList() {
       .catch((err) => console.error(err));
   }, []);
 
+  const handleClick = (id: number) => {
+    console.log(id);
+  }
+
   return (
     <div id="bubbles-container">
       <h1>Bubbles</h1>
       <ul id="bubble-list">
         {bubbles.map((product) => (
-          <li key={String(product.id)}>
+          <li key={String(product.id)} onClick={() => handleClick(product.id)}>
             <div className="product-img-container">
               <img src={product.image} alt="" />
             </div>
