@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BubbleType } from "../types/bubble-types";
 import "../styles/BubbleList.css";
 import { Link } from "react-router-dom";
+import NavigationBar from "./NavigationBar";
 
 export default function BubbleList() {
   let [bubbles, setBubbles] = useState<BubbleType[]>([]);
@@ -20,6 +21,8 @@ export default function BubbleList() {
   }
 
   return (
+    <>
+    <NavigationBar />
     <div id="bubbles-container">
       <h1>Bubbles</h1>
       <ul id="bubble-list">
@@ -44,5 +47,6 @@ export default function BubbleList() {
         ))}
       </ul>
     </div>
+    </>
   );
 }

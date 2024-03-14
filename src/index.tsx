@@ -4,11 +4,16 @@ import "./index.css";
 import App from "./main";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import BubbleList from "./components/BubbleList";
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/bubbles',
+    element: <BubbleList />
   }
 ]);
 
