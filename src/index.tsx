@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BubbleList from "./components/BubbleList";
 import Product from "./components/Product";
+import Bundles from "./components/Bundles";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: '/bubbles/:productId',
     element: <Product />
   },
+  {
+    path: '/bundles',
+    element: <Bundles />
+  }
 ]);
 
 const root = ReactDOM.createRoot(
