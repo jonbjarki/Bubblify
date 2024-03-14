@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/NavigationBar.css";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const categories = ["Bubbles", "Bundles", "About"];
@@ -8,18 +9,21 @@ const NavigationBar = () => {
     setSelectedIndex(index);
   };
 
+  const whereTo = ['/bubbles', '/bundles', '/about'];
+
   const [selectedInex, setSelectedIndex] = useState(0);
 
   return (
     <div id="navigation-container">
       {categories.map((category, index) => (
-        <button
+        <Link key={String(category)} to={whereTo[index]}>
+          <button
           className={selectedInex === index ? "btn-active" : ""}
-          key={String(category)}
           onClick={() => handleClick(index)}
-        >
+          >
           {category}
-        </button>
+          </button>
+        </Link>
       ))}
     </div>
   );
