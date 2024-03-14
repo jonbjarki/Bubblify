@@ -1,12 +1,10 @@
-#filter-btn-container {
+#navigation-container {
     background-color: white;
     padding: 10px 0px 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px;
+    margin: 25px 100px 25px 100px;
 }
 
-#filter-btn-container button {
+#navigation-container button {
     background-color: white;
     color: grey;
     font-family: "Mukta", sans-serif;
@@ -22,11 +20,11 @@
     border-radius: 100px;
 }
 
-#filter-btn-container button:hover {
+#navigation-container button:hover {
     color: #B85C79;
 }
 
-#filter-btn-container .btn-active {
+#navigation-container .btn-active {
     border-style: solid;
     border-width: 1px;
     color: #B85C79;

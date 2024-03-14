@@ -2,13 +2,14 @@ p {
     margin: 0;
 }
 
-#bubbles {
+#bubbles-container {
     margin-left: 100px;
     margin-right: 100px;
 }
 
 #bubble-list {
-    background-color: pink;
+    border-style: solid;
+    border-width: 1px;
     list-style: none;
     padding: 0px;
     display: grid;

@@ -15,7 +15,7 @@ export default function BubbleList() {
   }, []);
 
   return (
-    <div id="bubbles">
+    <div id="bubbles-container">
       <h1>Bubbles</h1>
       <ul id="bubble-list">
         {bubbles.map((product) => (

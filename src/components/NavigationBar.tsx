@@ -11,7 +11,7 @@ const FilterBar = () => {
   const [selectedInex, setSelectedIndex] = useState(0);
 
   return (
-    <div id="filter-btn-container">
+    <div id="navigation-container">
       {categories.map((category, index) => (
         <button
           className={selectedInex === index ? "btn-active" : ""}
