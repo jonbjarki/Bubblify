@@ -31,7 +31,7 @@ p {
 }
 
 #bubble-list li:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 }
 
 #bubble-list li .product-img-container {
@@ -62,7 +62,9 @@ p {
     padding-bottom: 10px;
 }
 
-#bubble-list li .product-info-container .product-description {}
+#bubble-list li .product-info-container .product-description {
+    font-size: 15px;
+}
 
 #bubble-list li .product-info-container .price-container {
     margin-top: auto;
