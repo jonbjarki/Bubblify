@@ -5,6 +5,7 @@ import App from "./main";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BubbleList from "./components/BubbleList";
+import Product from "./components/Product";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
   {
     path: '/bubbles',
     element: <BubbleList />
-  }
+  },
+  {
+    path: '/bubbles/:productId',
+    element: <Product />
+  },
 ]);
 
 const root = ReactDOM.createRoot(

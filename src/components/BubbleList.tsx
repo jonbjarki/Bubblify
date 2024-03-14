@@ -27,7 +27,12 @@ export default function BubbleList() {
       <h1>Bubbles</h1>
       <ul id="bubble-list">
         {bubbles.map((product) => (
-          <li key={String(product.id)} onClick={() => handleClick(product.id)}>
+          <Link 
+          key={String(product.id)} 
+          to={`/bubbles/${product.id}`}
+          className="text-decoration-off"
+          >
+          <li onClick={() => handleClick(product.id)}>
             <div className="product-img-container">
               <img src={product.image} alt="" />
             </div>
@@ -44,6 +49,7 @@ export default function BubbleList() {
               </div>
             </div>
           </li>
+          </Link>
         ))}
       </ul>
     </div>
