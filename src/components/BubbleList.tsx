@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BubbleType } from "../types/bubble-types";
 import "../styles/BubbleList.css";
+import { Link } from "react-router-dom";
 
 export default function BubbleList() {
   let [bubbles, setBubbles] = useState<BubbleType[]>([]);
@@ -35,8 +36,8 @@ export default function BubbleList() {
                 {product.description}
               </p>
               <div className="price-container">
-              <hr />
-              <p>Price: ${product.price}</p>
+                <hr />
+                <p>Price: ${product.price}</p>
               </div>
             </div>
           </li>
