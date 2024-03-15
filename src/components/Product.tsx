@@ -30,10 +30,23 @@ const Product = () => {
   return (
     <>
       <NavigationBar />
+
       <div id="product-container">
-        <p>{product.name}</p>
+        <div id="inner-product-container">
+          <div id="product-img-container">
+            <img src={product.image} alt="" />
+          </div>
+          <div id="detail-info-container">
+            <p id="name">{product.name}</p>
+            <p id="description">{product.description}</p>
+            <div id="cart-container">
+              <p id="price">${product.price}</p>
+              <button>Add to cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+      </>
   );
 }
 
