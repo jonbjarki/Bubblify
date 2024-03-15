@@ -4,9 +4,14 @@
     margin: 100px;
 }
 
+#error-container #message-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
 #error-container p {
     font-size: 30px;
-    margin: auto;
 }
 
 #error-container img {
