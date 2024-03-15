@@ -7,23 +7,28 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BubbleList from "./components/BubbleList";
 import Product from "./components/Product";
 import Bundles from "./components/Bundles";
+import PageNotFound from "./components/PageNotFound";
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    errorElement: <PageNotFound />,
   },
   {
     path: '/bubbles',
-    element: <BubbleList />
+    element: <BubbleList />,
+    errorElement: <PageNotFound />,
   },
   {
     path: '/bubbles/:productId',
-    element: <Product />
+    element: <Product />,
+    errorElement: <PageNotFound />,
   },
   {
     path: '/bundles',
-    element: <Bundles />
+    element: <Bundles />,
+    errorElement: <PageNotFound />,
   }
 ]);
 

@@ -1,0 +1,14 @@
+#error-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin: 100px;
+}
+
+#error-container p {
+    font-size: 30px;
+    margin: auto;
+}
+
+#error-container img {
+    height: 300px;
+}
