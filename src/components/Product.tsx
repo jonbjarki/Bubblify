@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BubbleType } from "../types/bubble-types";
 import NavigationBar from "./NavigationBar";
 import { useParams } from "react-router-dom";
+import "../styles/Product.css";
 
 const Product = () => {
   const { productId } = useParams();
@@ -19,11 +20,7 @@ const Product = () => {
 
   if (!product) {
     return (
-      <>
-        <NavigationBar />
-        <h1>Product</h1>
-        <div>Loading...</div>
-      </>
+      <></>
     );
     
   }
@@ -33,7 +30,7 @@ const Product = () => {
   return (
     <>
       <NavigationBar />
-      <div>
+      <div id="product-container">
         <h1>Product</h1>
         <p>{product.name}</p>
       </div>
