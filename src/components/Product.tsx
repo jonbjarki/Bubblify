@@ -31,7 +31,6 @@ const Product = () => {
     <>
       <NavigationBar />
       <div id="product-container">
-        <h1>Product</h1>
         <p>{product.name}</p>
       </div>
     </>
