@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BubbleList from "./components/BubbleList";
 import Product from "./components/Product";
-import Bundles from "./components/Bundles";
+import BundleList from "./components/BundleList";
 import PageNotFound from "./components/PageNotFound";
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/bundles',
-    element: <Bundles />,
+    element: <BundleList />,
     errorElement: <PageNotFound />,
   }
 ]);

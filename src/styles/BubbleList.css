@@ -8,8 +8,6 @@ p {
 }
 
 #bubble-list {
-    border-style: solid;
-    border-width: 1px;
     list-style: none;
     padding: 0px;
     display: grid;

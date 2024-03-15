@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 import { BundleType, BubbleType } from "../types/bubble-types";
-import "../styles/Bundles.css"
+import "../styles/BundleList.css"
 
 
 
-const Bundles = () => {
+const BundleList = () => {
   let [bubbles, setBubbles] = useState<BubbleType[]>([]);
   useEffect(() => {
     fetch(`http://localhost:3500/api/bubbles`)
@@ -60,4 +60,4 @@ const Bundles = () => {
     
 }
 
-export default Bundles;
+export default BundleList;
