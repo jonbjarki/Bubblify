@@ -1,0 +1,35 @@
+#about-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#about-container #upper-title {
+    margin-bottom: 5px;
+}
+
+#about-container #upper-title h1 {
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+#about-container #lower-title h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#about-container .info-section {
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+}
+
+#about-container .info-section img {
+    width: 500px;
+}
+
+#about-container .info-section p {
+    text-align: center;
+    margin: auto;
+    padding: 80px;
+}

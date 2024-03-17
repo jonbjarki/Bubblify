@@ -8,6 +8,7 @@ import BubbleList from "./components/BubbleList";
 import Product from "./components/Product";
 import BundleList from "./components/BundleList";
 import PageNotFound from "./components/PageNotFound";
+import AboutUs from "./components/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
   {
     path: '/bundles',
     element: <BundleList />,
+    errorElement: <PageNotFound />,
+  },
+  {
+    path: 'about',
+    element: <AboutUs />,
     errorElement: <PageNotFound />,
   }
 ]);
