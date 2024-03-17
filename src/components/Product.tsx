@@ -27,6 +27,11 @@ const Product = () => {
 
   console.log(product);
 
+  const handleCklick = () => {
+    var jsonString = JSON.stringify(product);
+    localStorage.setItem(String(product.id), jsonString);
+  }
+
   return (
     <>
       <NavigationBar />
@@ -41,7 +46,7 @@ const Product = () => {
             <p id="description">{product.description}</p>
             <div id="cart-container">
               <p id="price">${product.price}</p>
-              <button>Add to cart</button>
+              <button onClick={() => handleCklick()}>Add to cart</button>
             </div>
           </div>
         </div>
