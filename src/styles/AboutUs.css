@@ -21,8 +21,6 @@
 }
 
 #about .img-section {
-    /* border-style: solid;
-    border-width: 1px; */
     display: flex;
     margin-bottom: 100px;
 }
@@ -38,15 +36,84 @@
 }
 
 #about #contact-section {
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 100px;
-    padding: 80px;
+    margin-bottom: 200px;
+    margin-top: 200px;
 }
 
-#about #contact-section h2 {
+#about #contact-section #contact-title {
+    width: 650px;
+    margin: auto;
+}
+
+#about #contact-section #contact-title h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: 100;
     margin-top: 0;
+}
+
+#about #contact-section #contact-title p {
+    font-size: 20px;
+}
+
+#about #contact-section #contact-info {
+    display: flex;
+    margin-top: 80px;
+}
+
+#about #contact-section #contact-info #container {
+    display: flex;
+    margin: auto;
+}
+
+#about #contact-section #contact-info #container p {
+    font-size: 40px;
+}
+
+#about #contact-section #contact-info #container #phone-icon {
+    font-size: 40px;
+    margin: auto;
+    color: rgb(139, 186, 255);
+    margin-right: 15px;
+}
+
+#about #contact-section #contact-info #container div {
+    border-left: 2px solid;
+    margin: 0px 30px 0px 30px;
+}
+
+#about #contact-section #contact-info #container #envelope-icon {
+    font-size: 40px;
+    margin: 10px 0px 0px 0px;
+    color: rgb(139, 186, 255);
+    margin-right: 15px;
+}
+
+#about #location-section {
+    margin-bottom: 70px;
+}
+
+#about #location-section #title {
+    width: 650px;
+    margin: auto;
+}
+
+#about #location-section #title h2 {
+    text-align: center;
+    font-size: 43px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+#about #location-section #title p {
+    font-size: 20px;
+}
+
+#about #location-section #map-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+#about #location-section #map-container iframe {
+    margin: auto;
 }
