@@ -20,6 +20,17 @@ export default function BubbleList() {
     console.log(id);
   }
 
+  if (!bubbles) {
+    return (
+      <>
+        <NavigationBar />
+        <div id="bundles-container">
+          <h1>No bubbles found</h1>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
     <NavigationBar />

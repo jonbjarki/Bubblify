@@ -28,35 +28,46 @@ const BundleList = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  
-    return (
-      <>
+
+if (!bundles) {
+  return (
+    <>
       <NavigationBar />
       <div id="bundles-container">
-      <h1>Bundles</h1>
-      <ul id="bundles-list">
-        {bundles.map((bundle) => (
-          <li key={String(bundle.id)}>
-
-            <div className="product-img-container">
-              {bubbles.map((product) => (
-                 bundle.items.includes(product.id) ? (
-                  <img src={product.image} alt="" />
-                ) : null
-              ))}
-            </div>
-            <div className="product-info-container">
-
-              <p className="product-name">
-                {bundle.name}
-              </p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+        <h1>No bundles found</h1>
+      </div>
     </>
-    );
+  );
+}
+  
+  return (
+    <>
+    <NavigationBar />
+    <div id="bundles-container">
+    <h1>Bundles</h1>
+    <ul id="bundles-list">
+      {bundles.map((bundle) => (
+        <li key={String(bundle.id)}>
+
+          <div className="product-img-container">
+            {bubbles.map((product) => (
+                bundle.items.includes(product.id) ? (
+                <img src={product.image} alt="" />
+              ) : null
+            ))}
+          </div>
+          <div className="product-info-container">
+
+            <p className="product-name">
+              {bundle.name}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+  </>
+  );
     
 }
 

@@ -2,7 +2,7 @@ import { BubbleType } from "../../types/bubble-types";
 import Order from "../../types/order-types";
 import NavigationBar from "../NavigationBar";
 import "../../styles/Checkout.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ConfirmOrder() {
     const cartStorage = localStorage.getItem("cart");
@@ -28,7 +28,6 @@ export default function ConfirmOrder() {
             console.log("Order submitted:", data);
             localStorage.removeItem("cart");
             localStorage.removeItem("userInfo");
-            navigate("/");
         })
         .catch((err) => console.error("Error submitting order:", err));
     }
@@ -70,7 +69,9 @@ export default function ConfirmOrder() {
           
           </>}
         </div>
-        <button id="confirm-btn" onClick={handleSubmit}>Confirm Order</button>
+          <Link id="confirm-btn" onClick={handleSubmit} to={"/checkout/confirm/confirmed"}>
+            <p>Confirm Order</p>
+          </Link>
         </div>
         </>
     )

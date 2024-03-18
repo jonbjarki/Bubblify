@@ -1,0 +1,40 @@
+#outer-container {
+    display: flex;
+}
+
+#confirm-container {
+    margin: auto;
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+#checkmark-container {
+    margin: auto;
+    text-align: center;
+}
+
+#checkmark-container p {
+    margin-top: 20px;
+}
+
+#inner-checkmark-container {
+    background-color: rgb(118, 219, 105);
+    text-align: center;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+#check-icon {
+    font-size: 70px;
+    margin: auto;
+}
+
+#to-Home {
+    color: black;
+    text-decoration: none;
+    border: 1.5px solid;
+}

@@ -3,6 +3,8 @@ import { BubbleType } from "../types/bubble-types";
 import NavigationBar from "./NavigationBar";
 import { Link, useParams } from "react-router-dom";
 import "../styles/Product.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Product = () => {
   const { productId } = useParams();
@@ -24,6 +26,10 @@ const Product = () => {
 
   console.log(product);
 
+  const notifyAddToCart = () => {
+    toast(`Success! ${product.name} added to cart.`);
+  }
+
   const handleClick = () => {
     try {
       const cart = localStorage.getItem("cart");
@@ -31,6 +37,7 @@ const Product = () => {
       cartArray.push(product);
       localStorage.setItem("cart", JSON.stringify(cartArray));
       setAddedToCart(true);
+      notifyAddToCart();
     } catch (error) {
       console.error(`Error adding ${product} to local storage:`, error);
     }
@@ -61,6 +68,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

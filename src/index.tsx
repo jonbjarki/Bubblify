@@ -12,6 +12,7 @@ import AboutUs from "./components/AboutUs";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout/Checkout";
 import ConfirmOrder from "./components/Checkout/ConfirmOrder";
+import OrderConfirmed from "./components/OrderConfirmed";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: '/checkout/confirm',
     element: <ConfirmOrder />,
+  },
+  {
+    path: '/checkout/confirm/confirmed',
+    element: <OrderConfirmed />,
   },
   {
     path: '*',
