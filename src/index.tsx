@@ -9,6 +9,7 @@ import Product from "./components/Product";
 import BundleList from "./components/BundleList";
 import PageNotFound from "./components/PageNotFound";
 import AboutUs from "./components/AboutUs";
+import Cart from "./components/Cart";
 
 const router = createBrowserRouter([
   {
@@ -32,10 +33,15 @@ const router = createBrowserRouter([
     errorElement: <PageNotFound />,
   },
   {
-    path: 'about',
+    path: '/about',
     element: <AboutUs />,
     errorElement: <PageNotFound />,
-  }
+  },
+  {
+    path: '/cart',
+    element: <Cart />,
+    errorElement: <PageNotFound />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(

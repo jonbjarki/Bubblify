@@ -28,8 +28,17 @@ const Product = () => {
   console.log(product);
 
   const handleCklick = () => {
-    var jsonString = JSON.stringify(product);
-    localStorage.setItem(String(product.id), jsonString);
+    try {
+      const jsonString = JSON.stringify(product);
+      localStorage.setItem(String(product.id), jsonString);
+      console.log(`${product} added to local storage successfully`)
+    } catch(error) {
+
+      console.error(`Error adding ${product} to local storage:`, error);
+
+    }
+
+
   }
 
   return (

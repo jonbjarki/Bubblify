@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <>
     <NavigationBar />
-    <div id="about-container">
+    <div id="about">
       <div id="title-container">
         <div id="upper-title">
           <h1>Welcome to Bubblify</h1>

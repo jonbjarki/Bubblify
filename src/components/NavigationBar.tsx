@@ -24,6 +24,11 @@ const NavigationBar = () => {
           </button>
         </Link>
       ))}
+      <Link to={'/cart'}>
+        <button id="cart-butn">
+          Cart
+        </button>
+      </Link>
     </div>
   );
 };
