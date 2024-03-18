@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { BubbleType } from "../types/bubble-types";
 import NavigationBar from "./NavigationBar";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../styles/Product.css";
 
 const Product = () => {
   const { productId } = useParams();
-
   const [product, setProduct] = useState<BubbleType>();
+  const [addedToCart, setAddedToCart] = useState(false);
 
   useEffect(() => {
     fetch(`http://localhost:3500/api/bubbles/${productId}`)
@@ -16,30 +16,25 @@ const Product = () => {
         setProduct(data);
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [productId]);
 
   if (!product) {
-    return (
-      <></>
-    );
-    
+    return <></>;
   }
 
   console.log(product);
 
-  const handleCklick = () => {
+  const handleClick = () => {
     try {
-      const jsonString = JSON.stringify(product);
-      localStorage.setItem(String(product.id), jsonString);
-      console.log(`${product} added to local storage successfully`)
-    } catch(error) {
-
+      const cart = localStorage.getItem("cart");
+      let cartArray = cart ? JSON.parse(cart) : [];
+      cartArray.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartArray));
+      setAddedToCart(true);
+    } catch (error) {
       console.error(`Error adding ${product} to local storage:`, error);
-
     }
-
-
-  }
+  };
 
   return (
     <>
@@ -55,13 +50,19 @@ const Product = () => {
             <p id="description">{product.description}</p>
             <div id="cart-container">
               <p id="price">${product.price}</p>
-              <button onClick={() => handleCklick()}>Add to cart</button>
+              <button onClick={() => handleClick()}>Add to Cart</button>
+            </div>
+            <div id="checkout-btn-container">
+              {addedToCart ? (
+              <Link to="/checkout">
+                <button id="checkout-btn">Go to Checkout</button>
+              </Link>) : <></>}
             </div>
           </div>
         </div>
       </div>
-      </>
+    </>
   );
-}
+};
 
 export default Product;

@@ -1,0 +1,168 @@
+#checkout-container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+
+#items-header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.item-container {
+  display: flex;
+  width: 40%;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .item-name {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  .item-price {
+    color: #b85c79;
+  }
+}
+
+/* DeliveryInfoForm.tsx */
+
+#total-price-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  #total-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  #total-price {
+    font-weight: bold;
+    font-family: inherit;
+  }
+}
+
+#delivery-info-header {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+#delivery-method {
+  p {
+    font-size: 1.2rem;
+  }
+  label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 5px;
+  }
+}
+
+.information-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: auto;
+  input {
+    width: 40rem;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
+
+#order-info-container {
+  width: 80%;
+}
+
+#order-form {
+    button[type="submit"] {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(65, 176, 65);
+        color: white;
+        font-size: 1.2rem;
+        font-family: inherit;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+#error-message {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid red;
+    background-color: #ffb8b8;
+    width: 40rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ConfirmOrder.tsx */
+
+#confirm-container {
+    border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 10rem;
+}
+
+#user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+#confirm-btn {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(65, 176, 65);
+  color: white;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}

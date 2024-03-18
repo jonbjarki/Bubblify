@@ -10,6 +10,8 @@ import BundleList from "./components/BundleList";
 import PageNotFound from "./components/PageNotFound";
 import AboutUs from "./components/AboutUs";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout/Checkout";
+import ConfirmOrder from "./components/Checkout/ConfirmOrder";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,19 @@ const router = createBrowserRouter([
     path: '/cart',
     element: <Cart />,
     errorElement: <PageNotFound />,
+  },
+  {
+    path: '/checkout',
+    element: <Checkout />,
+    errorElement: <PageNotFound />,
+  },
+  {
+    path: '/checkout/confirm',
+    element: <ConfirmOrder />,
+  },
+  {
+    path: '*',
+    element: <PageNotFound />,
   },
 ]);
 

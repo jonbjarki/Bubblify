@@ -1,7 +1,15 @@
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
 #navigation-container {
+    display: flex;
+    align-items: center;
     background-color: white;
-    padding: 10px 0px 10px 0px;
     margin: 25px 100px 25px 100px;
+    border-radius: 60px;
 }
 
 #navigation-container button {
