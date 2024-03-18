@@ -1,4 +1,51 @@
+h1 {
+    margin-top: 0;
+}
+
 #cart {
     margin-left: 100px;
     margin-right: 100px;
+}
+
+#cart #header {
+    display: flex;
+}
+
+#cart #header button {
+    margin-left: auto;
+}
+
+#cart #item-container {
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+}
+
+#cart #item-container img {
+    width: 100px;
+}
+
+#cart #item-container #options-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+#cart #item-container #options-container p {
+    margin-left: 20px;
+}
+
+#cart #item-container #options-container button {
+    margin-left: 20px;
+    border-style: none;
+    background-color: transparent;
+    color: #007185;
+    border-color: #007185;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0;
+}
+
+#cart #item-container #options-container button:hover {
+    text-decoration: underline;
 }
