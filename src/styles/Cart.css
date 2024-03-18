@@ -13,8 +13,7 @@
 }
 
 #cart #item-container {
-    border-style: solid;
-    border-width: 1px;
+    /* border-bottom: 1.5px solid; */
     display: flex;
 }
 

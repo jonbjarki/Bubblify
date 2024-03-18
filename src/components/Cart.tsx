@@ -28,6 +28,7 @@ const Cart = () => {
               </Link> : <></>}
         </div>
         {cart.map((item) => (
+          <>
           <div id="item-container">
             <img src={item.image} alt="" />
             <div id="options-container">
@@ -38,6 +39,8 @@ const Cart = () => {
               </button>
             </div>
           </div>
+          <hr />
+          </>
         ))}
       </div>
     </>
